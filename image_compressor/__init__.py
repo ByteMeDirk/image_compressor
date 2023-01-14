@@ -91,15 +91,7 @@ class ImageCompressor(QWidget):
             new_file_location = f"{original_location}/compressed_image.jpg"
 
         # Save image
-        if new_filename:
-            pil_image.save(new_file_location, "JPEG", optimize=True, quality=85)
-        else:
-            pil_image.save(
-                f"{original_location}/compressed_image.jpg",
-                "JPEG",
-                optimize=True,
-                quality=85,
-            )
+        pil_image.save(new_file_location, "JPEG", optimize=True, quality=85)
 
         # Show notification
         self.image_label.setText(f"Image Compressed to {new_file_location}")
