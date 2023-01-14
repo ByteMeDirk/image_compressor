@@ -1,5 +1,7 @@
 # Image Compressor
 
+[Download](https://github.com/DirksCGM/image_compressor/raw/main/dist/Image%20Compressor.exe)
+
 A PyQt5 widget that allows the user to select an image, compress it and save it to a file.
 
 The code is totally opensource, so check it out, it simply does what it says on the box :D
