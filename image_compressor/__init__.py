@@ -81,9 +81,6 @@ class ImageCompressor(QWidget):
         # Convert to PIL Image
         pil_image = Image.fromqimage(image_data)
 
-        # Compress image
-        pil_image.save("compressed_image.jpg", "JPEG", optimize=True, quality=85)
-
         # Get save location
         original_location = "/".join(self.file_name.split("/")[:-1])
         new_filename = self.new_filename.text()
